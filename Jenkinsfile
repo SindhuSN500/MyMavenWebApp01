@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'master', url: 'https://github.com/SindhuSN500/MyMavenWebApp01.git'
-                credentialsId: 'github credential'
+                    credentialsId: 'github credential'
             }}
         stage('Build') {
             steps {
